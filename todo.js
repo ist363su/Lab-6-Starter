@@ -24,7 +24,7 @@ function addItem(itemText) {
 }
 
 
-// Remove Function
+// Remove Item Function
 function removeItem(itemText) {
     // You must find the items in the array of items and remove it
     // https://lmgtfy.com/?q=remove+item+from+array+javascript
@@ -33,7 +33,7 @@ function removeItem(itemText) {
 }
 
 // The function below renders the li tags in the ul tag
-function RenderItems() {
+function renderItems() {
     var el = document.getElementById('itemList');
     var ul = document.createElement('ul');
     items.forEach(function(item) {
@@ -68,4 +68,4 @@ function submitForm(evt) {
 document.getElementById('addForm').addEventListener('submit', submitForm);
 
 // Initial call to render function so items get rendered
-RenderItems();
+renderItems();
